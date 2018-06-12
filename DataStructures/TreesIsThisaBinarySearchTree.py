@@ -15,4 +15,3 @@ def checkBST(root, min=-1, max=10001):
         return False
     
     return checkBST(root.left, min, root.data-1) and checkBST(root.right, root.data+1, max)
-        
